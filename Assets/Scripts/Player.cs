@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     // Useful when not using a Rigidbody
     CharacterController characterController;
     public float speed = 5f;
+    public float jumpVelocity = 4f;
     private float gravity = -9.81f;
     Vector3 playerVelocity;
 
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour
             // Only allow the character to jump if they are on the ground
             if(Input.GetKeyDown(KeyCode.Space)) {
                 // If the player presses space, overcome gravity to jump
-                playerVelocity.y = 5f;
+                playerVelocity.y = jumpVelocity;
             }
         }
         else
