@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // Useful when not using a Rigidbody
     CharacterController characterController;
     public float speed = 5f;
-    public float jumpVelocity = 4f;
+    public float jumpVelocity = 5f;
     private float gravity = -9.81f;
     Vector3 playerVelocity;
 
