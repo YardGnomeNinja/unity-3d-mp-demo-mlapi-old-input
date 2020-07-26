@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         // Calculate Gravity
         if(characterController.isGrounded) {
             // If the character is on the ground, continue to apply downward force to keep them there
-            playerVelocity.y = gravity * Time.deltaTime;
+            playerVelocity.y = -1;
 
             // Only allow the character to jump if they are on the ground
             if(Input.GetKeyDown(KeyCode.Space)) {
